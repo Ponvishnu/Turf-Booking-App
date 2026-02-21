@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 7%;
+    --foreground: 60 10% 95%;
+
+    --card: 220 18% 10%;
+    --card-foreground: 60 10% 95%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 60 10% 95%;
+
+    --primary: 84 81% 44%;
+    --primary-foreground: 220 20% 7%;
+
+    --secondary: 220 16% 16%;
+    --secondary-foreground: 60 10% 90%;
+
+    --muted: 220 14% 14%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 84 60% 50%;
+    --accent-foreground: 220 20% 7%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 60 10% 95%;
+
+    --border: 220 14% 18%;
+    --input: 220 14% 18%;
+    --ring: 84 81% 44%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 60 10% 95%;
+    --sidebar-primary: 84 81% 44%;
+    --sidebar-primary-foreground: 220 20% 7%;
+    --sidebar-accent: 220 16% 16%;
+    --sidebar-accent-foreground: 60 10% 90%;
+    --sidebar-border: 220 14% 18%;
+    --sidebar-ring: 84 81% 44%;
+
+    /* Custom tokens */
+    --surface: 220 16% 12%;
+    --surface-hover: 220 16% 15%;
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+    --slot-available: 84 81% 44%;
+    --slot-booked: 0 72% 51%;
+    --slot-held: 38 92% 50%;
+    --slot-blocked: 220 14% 20%;
+    --gradient-hero: linear-gradient(135deg, hsl(84 81% 44% / 0.15), hsl(220 20% 7%) 60%);
+    --gradient-card: linear-gradient(180deg, hsl(220 18% 12%), hsl(220 18% 10%));
+    --shadow-glow: 0 0 40px hsl(84 81% 44% / 0.15);
+    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.3);
+  }
+
+  .dark {
+    --background: 220 20% 7%;
+    --foreground: 60 10% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .glass {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+  }
+
+  .slot-glow {
+    box-shadow: 0 0 12px hsl(var(--primary) / 0.3);
+  }
+}

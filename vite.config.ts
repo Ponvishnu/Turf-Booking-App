@@ -1,0 +1,50 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+import { componentTagger } from "lovable-tagger";
+import { VitePWA } from "vite-plugin-pwa";
+
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => ({
+  server: {
+    host: "::",
+    port: 8080,
+    hmr: {
+      overlay: false,
+    },
+  },
+  plugins: [
+    react(),
+    mode === "development" && componentTagger(),
+    VitePWA({
+      registerType: "autoUpdate",
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+      },
+      includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
+      manifest: {
+        name: "SlotZen",
+        short_name: "SlotZen",
+        description: "Turf booking application",
+        theme_color: "#ffffff",
+        icons: [
+          {
+            src: "placeholder.svg",
+            sizes: "192x192",
+            type: "image/svg+xml",
+          },
+          {
+            src: "placeholder.svg",
+            sizes: "512x512",
+            type: "image/svg+xml",
+          },
+        ],
+      },
+    }),
+  ].filter(Boolean),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+}));

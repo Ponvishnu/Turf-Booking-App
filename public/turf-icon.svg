@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#22c55e" rx="64"/>
+
+  <!-- Field outline -->
+  <rect x="32" y="32" width="448" height="448" fill="#16a34a" stroke="#15803d" stroke-width="4" rx="32"/>
+
+  <!-- Center circle -->
+  <circle cx="256" cy="256" r="80" fill="none" stroke="#fbbf24" stroke-width="3"/>
+  <circle cx="256" cy="256" r="4" fill="#fbbf24"/>
+
+  <!-- Center line -->
+  <line x1="256" y1="64" x2="256" y2="448" stroke="#fbbf24" stroke-width="3"/>
+
+  <!-- Goal areas -->
+  <rect x="64" y="160" width="80" height="192" fill="none" stroke="#fbbf24" stroke-width="3" rx="8"/>
+  <rect x="368" y="160" width="80" height="192" fill="none" stroke="#fbbf24" stroke-width="3" rx="8"/>
+
+  <!-- Penalty areas -->
+  <rect x="32" y="192" width="112" height="128" fill="none" stroke="#fbbf24" stroke-width="2" rx="4"/>
+  <rect x="368" y="192" width="112" height="128" fill="none" stroke="#fbbf24" stroke-width="2" rx="4"/>
+
+  <!-- Corner arcs -->
+  <path d="M64 64 Q96 64 96 96" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <path d="M448 64 Q448 96 416 96" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <path d="M64 448 Q96 448 96 416" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <path d="M448 448 Q448 416 416 416" fill="none" stroke="#fbbf24" stroke-width="2"/>
+
+  <!-- Football -->
+  <circle cx="200" cy="200" r="16" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+  <path d="M185 200 Q200 185 215 200 Q200 215 185 200" fill="#000000"/>
+  <path d="M192 192 L208 208 M208 192 L192 208" stroke="#000000" stroke-width="1"/>
+</svg>

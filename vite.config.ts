@@ -23,18 +23,18 @@ export default defineConfig(({ mode }) => ({
       },
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
       manifest: {
-        name: "SlotZen",
-        short_name: "SlotZen",
+        name: "Turf-booking-demp",
+        short_name: "TurfBooking",
         description: "Turf booking application",
         theme_color: "#ffffff",
         icons: [
           {
-            src: "placeholder.svg",
+            src: "turf-icon.svg",
             sizes: "192x192",
             type: "image/svg+xml",
           },
           {
-            src: "placeholder.svg",
+            src: "turf-icon.svg",
             sizes: "512x512",
             type: "image/svg+xml",
           },

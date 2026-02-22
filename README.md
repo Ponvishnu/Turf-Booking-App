@@ -1,22 +1,67 @@
-# Welcome to your Lovable project
+# Turf-booking-demp
 
-## Project info
+A modern turf booking Progressive Web App (PWA) built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- 🏟️ Browse and book turf facilities (Football, Basketball, Tennis)
+- 📱 Installable PWA - works on desktop and mobile
+- 🎨 Modern UI with shadcn/ui components
+- ⚡ Fast and responsive design
+- 📅 Slot booking system
+- 💳 Secure booking modal
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, shadcn/ui
+- **PWA**: Vite PWA plugin with service worker
+- **State Management**: React Query
+- **Forms**: React Hook Form with Zod validation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Clone the repository:
+```bash
+git clone https://github.com/Ponvishnu/Turf-Booking-App.git
+cd Turf-Booking-App
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+5. Preview production build:
+```bash
+npm run preview
+```
+
+## PWA Installation
+
+The app can be installed as a PWA on:
+- **Desktop**: Chrome/Edge browser install button
+- **Mobile**: Add to Home Screen in mobile browsers
+
+## Deployment
+
+Deploy to Vercel, Netlify, or any static hosting service. The build output is in the `dist` folder.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
